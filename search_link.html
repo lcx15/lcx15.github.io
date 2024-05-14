@@ -1,0 +1,53 @@
+<meta charset='utf-8'>
+<style>
+@font-face{
+    font-family:mc;
+    src: url(https://hellopgrmm.github.io/font/mc.otf);
+}
+body{
+    font-family:mc;
+}
+</style>
+<body><div id='target'><table border='0px'><tr><td width='2%'>
+<a style='font-size:50px;color:blue'>L</a><a style='font-size:50px;color:green'>1</a><a style='font-size:50px;color:pink'>5</a><a style='font-size:50px;color:orange'>官网</a></td><td width='1%'><a onclick='window.location.href="https://lcx15.github.io/"'>首页>></a></td><td width='1%'><a onclick='window.location.href="https://lcx15.github.io/tools.html"'>工具>></a></td><td width='1%'><a onclick='window.location.href="https://lcx15.github.io/more.html"'>更多>></a><td width='1%'><a onclick='window.location.href="https://lcx15.github.io/about.html"'>关于>></a></td></tr></table></div><hr><!--start--><h1>L15搜一搜</h1><a>请开始您的搜索:</a><br>
+    <style>
+        #KEYWORDS {
+            margin-bottom: 10px;
+            width:600px;height:50px;font-size:20px;outline:none;font-family:mc;border:1px solid black;border-radius:0px;
+        }
+        .FORMATS li {
+            display: none;
+        }
+        .pagination {
+            margin-top: 10px;
+        }
+        #d2{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="KEYWORDS" placeholder="输入关键字或软件名称,来吧老弟。">
+<ul class="FORMATS">
+    <li class="aurl"><a style='text-decoration:none;color:blue;font-size:20px;' href="https://wwo.lanzouo.com/iFYaa0nzhvuh" data-lastfrom="" title="Python下载">Python下载(密码:3fb7)</a></li>
+    <li class="aurl"><a style='text-decoration:none;color:blue;font-size:20px;' href="https://htsd209.github.io/Softs/pcl.exe" data-lastfrom="" title="PCL下载">PCL下载</a></li>
+</ul>
+<input<!--ended--><hr><center>Copyright(C)L15 版权所有，请勿盗版<br>2024<br>基于Hellopgrmm官方构建</center>
+<script>
+document.getElementById('KEYWORDS').addEventListener('input', function () {
+        var searchKeyword = this.value.toLowerCase();
+        var links = document.querySelectorAll('.FORMATS a');
+
+        links.forEach(function (link) {
+            var title = link.getAttribute('title').toLowerCase();
+            var url = link.getAttribute('href').toLowerCase();
+
+            if (title.includes(searchKeyword)) {
+                link.parentNode.style.display = 'block';
+            } else {
+                link.parentNode.style.display = 'none';
+            }
+        });
+    });
+</script>
